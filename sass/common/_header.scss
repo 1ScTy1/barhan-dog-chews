@@ -1,0 +1,27 @@
+.header{
+    background: #103D5C;
+}
+
+.navbar{
+    @include flex(space-between, center);
+    padding: 1.25rem 0;
+}
+.logo{
+    color: #F7920C;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.875rem;
+}
+.gray{
+    color: gray;
+    font-size: 1rem;
+    margin-left: 0.625rem;
+}
+.nav{
+
+    &__link{
+        text-decoration: none;
+        color: white;
+        margin-left: 1.25rem;
+    }
+}

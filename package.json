@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "delicious-hamburgers": "^1.2.0",
+    "normalize.scss": "^0.1.0"
+  }
+}

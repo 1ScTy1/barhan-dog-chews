@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <p class="logo__text">BARHAN</p>
+                    <p class="logo__text gray">DOG CHEWS</p>
+                </div>
+                <nav class="nav">
+                    <a href="" class="nav__link">PRODUCTS</a>
+                    <a href="" class="nav__link">CONTACT US</a>
+                </nav>
+                <button class="hamburger hamburger--criss-cross" type="button">
+                    <div class="inner">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        var hamburger = document.querySelector('button.hamburger');
+        var nav = document.querySelector('.nav');
+        hamburger.addEventListener('click', function() {
+	    hamburger.classList.toggle('active');
+	    nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
