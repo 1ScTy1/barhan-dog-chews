@@ -537,9 +537,18 @@ div.hamburger > .inner {
 }
 
 @font-face {
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Advent/advent-pro-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Advent/advent-pro-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Advent/advent-pro-v11-latin-regular.woff2") format("woff2"), url("../fonts/Advent/advent-pro-v11-latin-regular.woff") format("woff"), url("../fonts/Advent/advent-pro-v11-latin-regular.ttf") format("truetype"), url("../fonts/Advent/advent-pro-v11-latin-regular.svg#AdventPro") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
   font-family: "Fibre Vintage";
-  src: url("FibreVintage.eot");
-  src: local("Fibre Vintage"), local("FibreVintage"), url("FibreVintage.eot?#iefix") format("embedded-opentype"), url("FibreVintage.woff2") format("woff2"), url("FibreVintage.woff") format("woff"), url("FibreVintage.ttf") format("truetype");
+  src: url("../fonts/FibreVintage.eot");
+  src: local("../fonts/Fibre Vintage"), local("FibreVintage"), url("../fonts/FibreVintage.eot?#iefix") format("embedded-opentype"), url("../fonts/FibreVintage.woff2") format("woff2"), url("../fonts/FibreVintage.woff") format("woff"), url("../fonts/FibreVintage.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -549,12 +558,12 @@ div.hamburger > .inner {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .header {
-  background: #103D5C;
+  background: #103d5c;
 }
 
 .navbar {
@@ -565,22 +574,77 @@ div.hamburger > .inner {
 }
 
 .logo {
+  margin-left: 5.625rem;
   color: #F7920C;
-  font-size: 2rem;
-  font-weight: bold;
   line-height: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 0;
+  }
+}
+.logo__text {
+  font-family: "Fibre Vintage";
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .gray {
   color: gray;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-left: 0.625rem;
 }
 
+.nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(16, 61, 92, 0.7);
+  z-index: 3;
+  transition: 0.5s;
+  transform: translateY(-100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: unset;
+    position: static;
+  }
+}
+.nav.active {
+  transform: translateY(0);
+}
 .nav__link {
   text-decoration: none;
+  margin-top: 2.5rem;
   color: white;
-  margin-left: 1.25rem;
+  font-size: 3rem;
+  font-family: "Advent Pro";
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    margin: 0 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.hamburger {
+  z-index: 3;
+}
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

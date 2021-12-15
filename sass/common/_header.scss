@@ -1,5 +1,5 @@
 .header{
-    background: #103D5C;
+    background: rgb(16, 61, 92);
 }
 
 .navbar{
@@ -7,21 +7,67 @@
     padding: 1.25rem 0;
 }
 .logo{
+    margin-left: 5.625rem;
     color: #F7920C;
-    font-size: 2rem;
-    font-weight: bold;
     line-height: 1.875rem;
+    @include tablet {
+        margin-left: 0;
+    }
+    
+    &__text{
+        font-family: 'Fibre Vintage';
+        font-weight: bold;
+        font-size: 3rem;
+
+    }
+    
 }
 .gray{
     color: gray;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-left: 0.625rem;
 }
+
 .nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(16, 61, 92, .7);
+    z-index: 3;
+    transition: .5s;
+    transform: translateY(-100%);
+    @include flex(center, center, $dir:column);
+
+    @include tablet{
+        @include flex(space-between, center, $dir: row);
+        transform: unset;
+        position: static;
+    }
+    &.active{
+        transform: translateY(0);
+    }
 
     &__link{
         text-decoration: none;
+        margin-top: 2.5rem;
         color: white;
-        margin-left: 1.25rem;
+        font-size: 3rem;
+        font-family: 'Advent Pro';
+        position: relative;
+        
+        @include tablet {
+            margin:0 2.5rem;
+            font-size: 1.5rem;
+        }
+        
+    }
+}
+
+.hamburger{
+    z-index: 3;
+    @include tablet{
+        display: none;
     }
 }

@@ -1,11 +1,32 @@
+
+$phone: 480px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+
+$hamburger-color: white;
+
+@font-face {
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Advent/advent-pro-v11-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/Advent/advent-pro-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Advent/advent-pro-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Advent/advent-pro-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Advent/advent-pro-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Advent/advent-pro-v11-latin-regular.svg#AdventPro') format('svg'); /* Legacy iOS */
+  }
 @font-face {
     font-family: 'Fibre Vintage';
-    src: url('FibreVintage.eot');
-    src: local('Fibre Vintage'), local('FibreVintage'),
-        url('FibreVintage.eot?#iefix') format('embedded-opentype'),
-        url('FibreVintage.woff2') format('woff2'),
-        url('FibreVintage.woff') format('woff'),
-        url('FibreVintage.ttf') format('truetype');
+    src: url('../fonts/FibreVintage.eot');
+    src: local('../fonts/Fibre Vintage'), local('FibreVintage'),
+        url('../fonts/FibreVintage.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FibreVintage.woff2') format('woff2'),
+        url('../fonts/FibreVintage.woff') format('woff'),
+        url('../fonts/FibreVintage.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -16,6 +37,6 @@
     margin: 0;
 }
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
