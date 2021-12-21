@@ -1,0 +1,19 @@
+.license{
+    @include flex(space-between, center, $dir: column);
+    @include tablet {
+        @include flex(space-between, center, $dir: row);
+    }
+    
+    &__item{
+        width: 100%;
+        @include flex(center, center);
+        border-bottom: 4px solid rgb(16, 61, 92);
+        padding: 1.25rem;
+        @include tablet{
+            border: none;
+        }
+    }
+    &__img{
+        width: 50%;
+    }
+}

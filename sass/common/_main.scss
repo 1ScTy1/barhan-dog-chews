@@ -1,0 +1,98 @@
+.main{
+    background: url('../img/header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 6.25rem 0;
+    position: relative;
+    overflow: hidden;
+    @include tablet{
+        padding: 15.25rem 0;
+
+    }
+
+    &__title{
+        margin: 0 0 0 1.25rem ;
+        width: 300px;
+        font-family: 'Fibre Vintage';
+        font-size:2.5rem;
+        color:rgb(16, 61, 92);      
+        letter-spacing: 0.3125rem;
+        
+        @include tablet{
+            font-size: 5.5rem;
+            width: 600px;
+            
+        }
+    }
+
+    &__link{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-family: 'Advent Pro';
+        background: rgb(16, 61, 92);
+        padding: 0.625rem 1.25rem; 
+        border-radius: 15px;
+        margin: 1rem 0 1rem 1.25rem;
+        font-size: 0.625rem; 
+        font-weight: bold;   
+        
+        @include tablet {
+            font-size: 20px;
+        }
+    }
+    
+    &__layer{
+        position: absolute;
+        bottom: 0;
+        background: rgba(16, 61, 92, .9);
+        width: 100%;
+        height: 100px;
+        transform: translateX(50%);
+        border-radius: 200px 0;
+        @include flex(start, end);
+
+        @include tablet{
+            height: 300px;
+            transform: translateX(60%);
+            border-radius: 300px 0;
+            @include flex($cross:center);
+
+            }
+
+    }
+    
+    &__logo{
+        margin: 0 0 1.25rem 2.5rem;
+        @include tablet{
+            margin-left: 7.375rem;
+        }
+        @include laptop{
+            margin-left: 7.375rem;
+        }
+    }
+
+    &__text{
+        font-size: 1.875rem;
+        line-height: 1.5rem;
+        @include tablet{
+            font-size: 4rem;
+            line-height: 3.5rem;
+        }
+        @include laptop{ 
+            font-size: 5rem;
+        }
+
+    }
+    &__gray{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        @include tablet{
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+        @include laptop{ 
+            font-size: 4rem;
+        }
+    }
+
+}
