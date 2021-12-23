@@ -2,6 +2,8 @@
     @include flex(space-between, center, $dir: column);
     @include tablet {
         @include flex(space-between, center, $dir: row);
+        padding: 3.5625rem 0;
+
     }
     
     &__item{
@@ -15,5 +17,8 @@
     }
     &__img{
         width: 50%;
+        @include tablet{
+            width: 100%;
+        }
     }
 }

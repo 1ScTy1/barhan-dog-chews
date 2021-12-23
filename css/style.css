@@ -768,6 +768,7 @@ div.hamburger > .inner {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 3.5625rem 0;
   }
 }
 .license__item {
@@ -785,6 +786,65 @@ div.hamburger > .inner {
 }
 .license__img {
   width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .license__img {
+    width: 100%;
+  }
+}
+
+.blog {
+  text-align: center;
+  font-family: "Advent Pro";
+  border-bottom: 0.3125rem solid white;
+}
+@media screen and (min-width: 768px) {
+  .blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.blog__item {
+  height: 400px;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .blog__item {
+    width: 34%;
+  }
+}
+.blog__title {
+  color: #103D5C;
+  font-size: 2.3rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.1875rem;
+}
+.blog__text {
+  font-size: 1.125rem;
+  letter-spacing: 0.125rem;
+  color: #103D5C;
+  font-weight: bold;
+}
+
+.bg {
+  background: #F7920D;
+}
+
+.bg-dark {
+  background: #103D5C;
+}
+
+.light {
+  color: #F7920D;
+}
+
+.footer {
+  background: #103D5C;
 }
 
 /*# sourceMappingURL=style.css.map */
