@@ -8,8 +8,8 @@
 }
 .logo{
     margin-left: 5.625rem;
-    color: #F7920C;
     line-height: 1.875rem;
+    
     @include tablet {
         margin-left: 0;
     }
@@ -18,7 +18,12 @@
         font-family: 'Fibre Vintage';
         font-weight: bold;
         font-size: 3rem;
+        color: #F7920C;
 
+
+    }
+    &__link{
+        text-decoration: none;
     }
     
 }

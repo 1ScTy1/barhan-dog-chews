@@ -1,4 +1,47 @@
 .footer{
     background: #103D5C;
+    padding: 3.125rem 0;
 
+    &__container{
+        @include flex(space-between, center, $dir: column);
+
+        @include tablet{
+            @include flex(space-between, center, $dir: row);
+
+        }
+
+    }
+
+    &__link{
+        text-decoration: none;
+        margin-top: 2.5rem;
+        color: white;
+        font-size: 2rem;
+        font-family: 'Advent Pro';
+        position: relative;
+        
+        @include tablet {
+            margin:0 2.5rem;
+            font-size: 1.5rem;
+        }
+        
+    }
+    &__nav{
+        @include flex(center, center, $dir: column);
+        @include tablet{
+            @include flex(space-between, center, $dir: row);
+
+        }
+    }
+
+    &__text{
+        font-size: 5rem;
+        line-height: 3.8rem;
+    }
+    &__gray{
+        font-size: 4rem;
+    }
+    &__logo{
+        margin: 0;
+    }
 }

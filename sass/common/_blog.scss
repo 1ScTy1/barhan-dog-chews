@@ -10,6 +10,7 @@
     &__item{
         height: 400px;
         padding: 0 1.25rem;
+        border: 3px #103D5C solid;
         @include flex(center, center, $dir:column);
 
         @include tablet{
@@ -32,9 +33,12 @@
 }
 .bg{
     background: #F7920D;
+    border: none;
 }
 .bg-dark{
     background: #103D5C;
+    border: none;
+
 }
 .light{
     color: #F7920D;

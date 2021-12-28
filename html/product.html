@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDC</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../index.html" class="logo__link">
+                        <p class="logo__text">BARKHAN</p>
+                        <p class="logo__text gray">DOG CHEWS</p>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a href="../index.html" class="nav__link">HOME</a>
+                    <a href="./product.html" class="nav__link">PRODUCTS</a>
+                    <a href="./contact.html" class="nav__link">CONTACT US</a>
+                </nav>
+                <button class="hamburger hamburger--criss-cross" type="button">
+                    <div class="inner">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="product">
+        <h3 class="product__main-title">
+            PRODUCTS
+        </h3>
+
+        <div class="container">
+            <div class="product__section">
+                <div class="product__item">
+                    <img src="../img/product (1).jpg" alt="" class="product__img">
+                    <div class="product__info">
+                        <h4 class="product__title">12 inch-Bully Sticks</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="../img/product (2).jpg" alt="" class="product__img">
+                    <div class="product__info">
+                        <h4 class="product__title">9 inch-Bully Sticks</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="../img/product (3).jpg" alt="" class="product__img">
+                    <div class="product__info">
+                        <h4 class="product__title">6 inch-Bully Sticks</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="../img/pic4.jpg" alt="" class="product__img">
+                    <div class="product__info">
+                        <h4 class="product__title">12 inch-Braided Bully Sticks</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="../img/pic5.jpg" alt="" class="product__img">
+                    <div class="product__info">
+                        <h4 class="product__title">6 inch-Braided Bully Sticks</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="../img/pic6.jpg" alt="" class="product__img">
+                    <div class="product__info">
+                        <h4 class="product__title">6 inch-Beef Trachea</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="../img/pic7.jpg" alt="" class="product__img">
+                    <div class="product__info">
+                        <h4 class="product__title">12 inch-Beef Trachea</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="../img/pic8.jpg" alt="" class="product__img">
+                    <div class="product__info">
+                        <h4 class="product__title">9-12 inch-Beef Tendon</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="../img/pic9.jpg" alt="" class="product__img">
+                    <div class="product__info">
+                        <h4 class="product__title">6-inch Beef Collagen Stick</h4>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="logo footer__logo">
+                <a href="./index.html" class="logo__link">
+                    <p class="logo__text footer__text">BARKHAN</p>
+                    <p class="logo__text gray footer__gray">DOG CHEWS</p>
+                </a>
+            </div>
+            <nav class="footer__nav">
+                <a href="../index.html" class="footer__link">HOME</a>
+                <a href="./product.html" class="footer__link">PRODUCT</a>
+                <a href="./contact.html" class="footer__link">CONTACT US</a>
+            </nav>
+        </div>
+    </footer>
+
+
+    <script>
+        var hamburger = document.querySelector('button.hamburger');
+        var nav = document.querySelector('.nav');
+        hamburger.addEventListener('click', function() {
+	    hamburger.classList.toggle('active');
+	    nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
