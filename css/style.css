@@ -552,6 +552,48 @@ div.hamburger > .inner {
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icons/icomoon.eot?4fo5ec");
+  src: url("../fonts/icons/icomoon.eot?4fo5ec#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?4fo5ec") format("truetype"), url("../fonts/icons/icomoon.woff?4fo5ec") format("woff"), url("../fonts/icons/icomoon.svg?4fo5ec#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-brand-dot-ai:before {
+  content: "\e900";
+  color: #0aa0ff;
+}
+
+.icon-mail:before {
+  content: "\e901";
+  color: #168de2;
+}
+
+.icon-telegram:before {
+  content: "\e902";
+  color: #2ca5e0;
+}
+
+.icon-whatsapp:before {
+  content: "\e903";
+  color: #25d366;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -802,7 +844,6 @@ div.hamburger > .inner {
 .blog {
   text-align: center;
   font-family: "Advent Pro";
-  border-bottom: 0.3125rem solid white;
 }
 @media screen and (min-width: 768px) {
   .blog {
@@ -956,6 +997,46 @@ div.hamburger > .inner {
 .product__title {
   font-family: "Advent Pro";
   font-size: 20px;
+}
+
+.contact {
+  background: #ccc;
+  font-family: "Advent Pro";
+  padding: 100px 0;
+}
+.contact__main-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #F7920D;
+}
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.contact__title {
+  font-size: 1.875rem;
+  margin: 0 1.25rem 0 0.3125rem;
+  color: #103D5C;
+}
+.contact__icon {
+  font-size: 1.875rem;
+}
+.contact__link {
+  font-size: 1.25rem;
+}
+.contact__link.wa {
+  color: #103D5C;
+  font-size: 1.875rem;
 }
 
 /*# sourceMappingURL=style.css.map */

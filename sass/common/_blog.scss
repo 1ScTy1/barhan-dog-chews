@@ -1,7 +1,6 @@
 .blog{
     text-align: center;
     font-family: 'Advent Pro';
-    border-bottom: 0.3125rem solid  white;
     
     @include tablet{
         @include flex(space-between, center)
